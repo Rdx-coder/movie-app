@@ -17,14 +17,15 @@ Follow the steps below to set up and run the Movie Search Web App locally.
    git clone [https://github.com/Rdx-coder/movie-app.git]
    cd movie-search-web-app
 
-Install Dependencies:
+## Install Dependencies:
 
 npm install
 
--- Use the database
+## database : 
+
+CREATE DATABASE movie_app_db;
 USE movie_app_db;
 
--- Create a table for favorites
 CREATE TABLE favorites (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
@@ -33,6 +34,6 @@ CREATE TABLE favorites (
   poster VARCHAR(255) NOT NULL
 );
 
-run on terminal this command 
+## run on terminal using this command 
 
 node app.js
